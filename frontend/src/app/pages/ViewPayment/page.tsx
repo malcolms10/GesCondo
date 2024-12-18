@@ -30,7 +30,7 @@ export default function ViewPayment() {
                                     <p>27/02/2024</p>
                                     <p>Solicitação de pagamento</p>
                                     <p>H</p>
-                                    <p className="bg-waitbg border-b-waitborder text-waittext p-2 text-sm rounded-md">Pro tratar</p>
+                                    <p className="bg-waitbg border-b-waitborder text-waittext p-2 text-sm rounded-md">Por tratar</p>
                                 </div>
                                 <hr />
                             </div>

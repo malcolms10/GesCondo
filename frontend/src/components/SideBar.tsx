@@ -16,6 +16,16 @@ export default function Sidebar({ Option }) {
         router.push('/')
     }
 
+    function handleService() {
+        localStorage.clear()
+        router.push('/pages/AskService')
+    }
+
+    function handlePayment() {
+        localStorage.clear()
+        router.push('/pages/SubmitPayment')
+    }
+
     return(
         <>
         {Option === "admin" && (
@@ -48,13 +58,13 @@ export default function Sidebar({ Option }) {
                                 <Link href={'/pages/Dashboard'} className='text-primary flex ml-[10%] items-center gap-3'> <AiFillSignal size={24} color="primary"/><p>Dashboard</p></Link>    
                             </ul>
                             <ul className='p-2'>                
-                                <div onClick={handleLogOut} className='flex ml-[10%] items-center gap-3 text-second'> 
+                                <div onClick={handleService} className='flex ml-[10%] items-center gap-3 text-second'> 
                                     <CiCirclePlus size={24} color="white"/>
                                     <p>Solicitar serviço</p>
                                 </div>
                             </ul>
                             <ul className='p-2'>                
-                                <div onClick={handleLogOut} className='flex ml-[10%] items-center gap-3 text-second'> 
+                                <div onClick={handlePayment} className='flex ml-[10%] items-center gap-3 text-second'> 
                                     <CiCirclePlus size={24} color="white"/>
                                     <p> Submeter pagamento</p>
                                 </div>
